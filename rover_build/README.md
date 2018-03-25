@@ -17,7 +17,7 @@
 | SanDisk Ultra 32 GB MicroSDHC UHS-I Memory Card with SD Adapter      | £12  |
 | 3A BEC 5V/6V switchable 2-6s input: £5                               | £5   |
 | SP RC Electric Model 7.2v 4700mah Ni-MH Bat                          | 3x£27|
-|                                                                      | **987** |
+|                                                                      | **£987** |
 
 
 ## Connections
