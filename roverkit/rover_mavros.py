@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import rospy
 from mavros_msgs.srv import SetMode
 from mavros_msgs.msg import OverrideRCIn
@@ -19,9 +18,6 @@ class MavrosRover:
 
     def set_steering(self, value):
         self.rc_steering.set_value(value)
-
-    def connect(self, device):
-        self.set_mode("manual")
 
     def set_mode(self, mode):
         rospy.wait_for_service('/mavros/set_mode')

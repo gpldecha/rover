@@ -5,7 +5,9 @@
 import threading
 import os, struct, array
 from fcntl import ioctl
-
+import fcntl, locale
+import time
+import serial
 
 # These constants were borrowed from linux/input.h
 axis_names = {
@@ -93,7 +95,8 @@ class Joystick(threading.Thread):
         self.button_map = []
         self.fn = '/dev/input/js0'
         self.jsdev = None
-        self._stop_event = threading.Event()
+        self.ser = None
+        self._stop_flag = False
         self._initialise()
 
     def _initialise(self):
@@ -105,6 +108,7 @@ class Joystick(threading.Thread):
 
         # Open the joystick device.
         print('Opening %s...' % self.fn)
+        # self.jsdev = os.open(self.fn, os.O_RDWR)
         self.jsdev = open(self.fn, 'rb')
 
         #buf = bytearray(63)
@@ -144,10 +148,12 @@ class Joystick(threading.Thread):
         print '%d buttons found: %s' % (num_buttons, ', '.join(self.button_map))
 
     def run(self):
-        while not self._stop_event.is_set():
+        while not self._stop_flag:
+
+            # evbuf = self.jsdev.read(8)  # blocking
             evbuf = self.jsdev.read(8)
             if evbuf:
-                time, value, type, number = struct.unpack('IhBB', evbuf)
+                time_, value, type, number = struct.unpack('IhBB', evbuf)
                 if self.print_out and type & 0x80:
                     print "(initial)",
                 if type & 0x01:
@@ -165,17 +171,10 @@ class Joystick(threading.Thread):
                         fvalue = value / 32767.0
                         self.axis_states[axis] = fvalue
                         if self.print_out: print "%s: %.3f" % (axis, fvalue)
-            self._stop_event.wait(0.002)
+            print('flag: {}'.format(self._stop_flag))
+        print('joystick stopped')
+        self.jsdev.close()
 
     def stop(self):
-        self._stop_event.set()
-
-
-if __name__ == "__main__":
-
-    joystick = Joystick()
-    joystick.start()
-
-    import time
-    while True:
-        time.sleep(0.1)
+        print 'flag set to stop'
+        self._stop_flag = True
