@@ -6,8 +6,10 @@ Autonomous 6WD Thumper Rover
 </p>
 
 
-## [Hardware build](https://github.com/gpldecha/rover/tree/master/rover_build)
+### [Hardware build](https://github.com/gpldecha/rover/tree/master/rover_build)
 
-## Remote control
+### ArduPilot setup
 
-## Autonomous control
+### Remote control
+
+### Autonomous control
