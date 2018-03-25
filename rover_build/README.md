@@ -10,6 +10,7 @@
 | FrSky Taranis Q X7                                                   | £110 |
 | Pixhawk2                                                             | £195 |
 | Here GNSS                                                            | £50  |
+| Pixhawk 2 Cable Set                                                  | £15  |
 | Raspberry pi 3                                                       | £50  |
 | 3A BEC 5V/6V switchable 2-6s input: £5                               | £5   |
 
