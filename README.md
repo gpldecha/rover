@@ -6,7 +6,7 @@ Autonomous 6WD Thumper Rover
 </p>
 
 
-## Hardware build
+## [Hardware build](https://github.com/gpldecha/rover/tree/master/rover_build)
 
 ## Remote control
 
