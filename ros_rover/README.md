@@ -5,3 +5,4 @@ of a noisy singal.
 
 **References**
 * [qml-imu](https://github.com/chili-epfl/qml-imu) 
+* [robot_pose_ekf](http://wiki.ros.org/robot_pose_ekf)
