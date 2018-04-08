@@ -8,6 +8,7 @@ of a noisy singal.
 * ```roslaunch raspicam_node camera.launch```
   -  /raspicam/image/compressed: sensor_msgs/CompressedImage
 * ``` rosrun image_transport republish compressed in:=/raspicam/image raw out:=/raspicam/image_raw```
+* ``` ROS_NAMESPACE=raspicam rosrun image_proc image_proc```
 
 [raspicam_node](https://github.com/UbiquityRobotics/raspicam_node)
 
