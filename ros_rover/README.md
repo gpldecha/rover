@@ -9,6 +9,7 @@ of a noisy singal.
   -  /raspicam/image/compressed: sensor_msgs/CompressedImage
 * ``` rosrun image_transport republish compressed in:=/raspicam/image raw out:=/raspicam/image_raw```
 * ``` ROS_NAMESPACE=raspicam rosrun image_proc image_proc```
+* ``` rosrun viso2_ros mono_odometer image:=/raspicam/image_rect```
 
 [raspicam_node](https://github.com/UbiquityRobotics/raspicam_node)
 
