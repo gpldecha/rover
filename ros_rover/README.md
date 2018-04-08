@@ -3,7 +3,12 @@
 The objective is to get position estimate from linear acceleration. This is difficult as it requires a double integration
 of a noisy singal.
 
-## Camera calibration
+## Camera
+
+[raspicam_node](https://github.com/UbiquityRobotics/raspicam_node)
+
+
+### calibration
 
 [OpenCV camera model](https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html)
 
