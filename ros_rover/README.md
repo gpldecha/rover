@@ -13,12 +13,15 @@ of a noisy singal.
 
 [raspicam_node](https://github.com/UbiquityRobotics/raspicam_node)
 
-
 ### calibration
 
 [OpenCV camera model](https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html)
 
 [What Is Camera Calibration?](https://uk.mathworks.com/help/vision/ug/camera-calibration.html)
+
+## SLAM
+
+[ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2)
 
 **References**
 * [qml-imu](https://github.com/chili-epfl/qml-imu) 
