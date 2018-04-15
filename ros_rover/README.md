@@ -25,6 +25,8 @@ of a noisy singal.
 
 [ROS ORB-SLAM2](https://github.com/ildoonet/ros-orb-slam2)
 
+[LSD-SLAM](https://github.com/kevin-george/lsd_slam/wiki/LSD-SLAM-with-ROS-and-Ubuntu-16.04)
+
 **References**
 * [qml-imu](https://github.com/chili-epfl/qml-imu) 
 * [robot_pose_ekf](http://wiki.ros.org/robot_pose_ekf)
