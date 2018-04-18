@@ -30,6 +30,8 @@ of a noisy singal.
   * can get somewhate working (orientation can be extracted)
   
  [VIORB](https://github.com/jingpang/LearnVIORB) combining IMU with SLAM seems like a good approach.
+ 
+ [DSO ROS](https://github.com/JakobEngel/dso_ros)
 
 **References**
 * [qml-imu](https://github.com/chili-epfl/qml-imu) 
