@@ -24,8 +24,12 @@ of a noisy singal.
 [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2)
 
 [ROS ORB-SLAM2](https://github.com/ildoonet/ros-orb-slam2)
+  * might have to train new visual vocabulary 
 
 [LSD-SLAM](https://github.com/kevin-george/lsd_slam/wiki/LSD-SLAM-with-ROS-and-Ubuntu-16.04)
+  * can get somewhate working (orientation can be extracted)
+  
+ [VIORB](https://github.com/jingpang/LearnVIORB) combining IMU with SLAM seems like a good approach.
 
 **References**
 * [qml-imu](https://github.com/chili-epfl/qml-imu) 
