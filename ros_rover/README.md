@@ -25,6 +25,8 @@ of a noisy singal.
 
     rosrun camera_calibration cameracalibrator.py <specify topics/calibration target>
 
+[ros camera calibration](http://wiki.ros.org/camera_calibration)
+
 ## SLAM
 
 [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2)
