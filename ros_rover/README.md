@@ -23,6 +23,8 @@ of a noisy singal.
 
 [What Is Camera Calibration?](https://uk.mathworks.com/help/vision/ug/camera-calibration.html)
 
+    rosrun camera_calibration cameracalibrator.py <specify topics/calibration target>
+
 ## SLAM
 
 [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2)
