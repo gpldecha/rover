@@ -11,6 +11,10 @@ of a noisy singal.
 * ``` ROS_NAMESPACE=raspicam rosrun image_proc image_proc```
 * ``` rosrun viso2_ros mono_odometer image:=/raspicam/image_rect```
 
+### usb camera
+
+* [video_stream_opencv](https://github.com/ros-drivers/video_stream_opencv)
+
 [raspicam_node](https://github.com/UbiquityRobotics/raspicam_node)
 
 ### calibration
